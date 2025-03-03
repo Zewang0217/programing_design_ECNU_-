@@ -128,7 +128,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="1016keyboard.cpp" />
+    <ClCompile Include="1017GradeSort.cpp" />
+    <ClCompile Include="1028AskForHeight.cpp" />
     <ClCompile Include="practice.cpp" />
+    <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="SortAndRemoveDuplicates.cpp" />
     <ClCompile Include="sortByABS.cpp" />
     <ClCompile Include="Sortit1014.cpp" />

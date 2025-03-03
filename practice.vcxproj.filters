@@ -30,5 +30,14 @@
     <ClCompile Include="1016keyboard.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1017GradeSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1028AskForHeight.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1019SOrt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
