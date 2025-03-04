@@ -18,25 +18,31 @@
     <ClCompile Include="practice.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="sortByABS.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Sortit1014.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="SortAndRemoveDuplicates.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="1016keyboard.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="1017GradeSort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1028AskForHeight.cpp">
+    <ClCompile Include="1019SOrt.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1019SOrt.cpp">
+    <ClCompile Include="1020literatureSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1018AskForHeight.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1015SortAndRemoveDuplicates.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1014Sortit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1013sortByABS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1021SaddlePoint.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

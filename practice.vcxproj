@@ -127,14 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1013sortByABS.cpp" />
+    <ClCompile Include="1014Sortit.cpp" />
+    <ClCompile Include="1015SortAndRemoveDuplicates.cpp" />
     <ClCompile Include="1016keyboard.cpp" />
     <ClCompile Include="1017GradeSort.cpp" />
-    <ClCompile Include="1028AskForHeight.cpp" />
+    <ClCompile Include="1018AskForHeight.cpp" />
+    <ClCompile Include="1020literatureSort.cpp" />
+    <ClCompile Include="1021SaddlePoint.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
-    <ClCompile Include="SortAndRemoveDuplicates.cpp" />
-    <ClCompile Include="sortByABS.cpp" />
-    <ClCompile Include="Sortit1014.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
