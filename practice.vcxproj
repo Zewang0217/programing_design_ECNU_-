@@ -135,6 +135,7 @@
     <ClCompile Include="1018AskForHeight.cpp" />
     <ClCompile Include="1020literatureSort.cpp" />
     <ClCompile Include="1021SaddlePoint.cpp" />
+    <ClCompile Include="1022ArraySort.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
   </ItemGroup>
