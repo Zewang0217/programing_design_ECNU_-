@@ -54,5 +54,14 @@
     <ClCompile Include="1024wordList.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1025productRecommendation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1026scoreCaculate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1027fret.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

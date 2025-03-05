@@ -137,6 +137,9 @@
     <ClCompile Include="1021SaddlePoint.cpp" />
     <ClCompile Include="1022ArraySort.cpp" />
     <ClCompile Include="1024wordList.cpp" />
+    <ClCompile Include="1025productRecommendation.cpp" />
+    <ClCompile Include="1026scoreCaculate.cpp" />
+    <ClCompile Include="1027fret.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />
