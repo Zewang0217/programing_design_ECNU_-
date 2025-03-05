@@ -136,8 +136,10 @@
     <ClCompile Include="1020literatureSort.cpp" />
     <ClCompile Include="1021SaddlePoint.cpp" />
     <ClCompile Include="1022ArraySort.cpp" />
+    <ClCompile Include="1024wordList.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
+    <ClCompile Include="1023StudentInfoProgress.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
