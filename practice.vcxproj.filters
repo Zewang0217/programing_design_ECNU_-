@@ -63,5 +63,14 @@
     <ClCompile Include="1027fret.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1028exponentialProportion.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1029SortSubstringsByNonRepeatedCharacterCount.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1030SortByPrimeNumberCount.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

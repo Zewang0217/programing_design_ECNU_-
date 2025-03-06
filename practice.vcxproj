@@ -140,9 +140,12 @@
     <ClCompile Include="1025productRecommendation.cpp" />
     <ClCompile Include="1026scoreCaculate.cpp" />
     <ClCompile Include="1027fret.cpp" />
+    <ClCompile Include="1028exponentialProportion.cpp" />
+    <ClCompile Include="1030SortByPrimeNumberCount.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />
+    <ClCompile Include="1029SortSubstringsByNonRepeatedCharacterCount.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -86,3 +86,25 @@ while (iss >> word) {
 ```
 
 - **功能**：`std::istringstream` 可以将字符串 `line` 当作输入流处理。通过 `iss >> word` 操作，会从这个字符串流中**依次提取出**以空格分隔的单词，每次提取一个单词并存储到 `word` 中，然后将其添加到 `words` 向量里，从而实现将一行字符串分割成多个单词的功能。
+
+# utility
+
+## make_pair
+
+在 C++ 里，`make_pair` 是标准库 `<utility>` 中定义的一个函数模板，其主要作用是创建一个 `std::pair` 对象。下面从定义、使用方法、优势、示例代码几个方面详细介绍。
+
+### 定义
+
+`std::make_pair` 函数模板的原型如下：
+
+```cpp
+template< class T1, class T2 >
+std::pair<T1,T2> make_pair( T1 t, T2 u );
+```
+
+此函数接受两个参数 `t` 和 `u`，返回一个 `std::pair<T1, T2>` 对象，其中 `T1` 和 `T2` 是根据传入参数的类型自动推导得出的。
+
+### 优势
+
+- **类型推导**：`make_pair` 可以自动推导传入参数的类型，不用显式指定 `std::pair` 的模板参数，让代码更简洁。例如，不用写成 `std::pair<int, const char*>(10, "hello")`，直接用 `std::make_pair(10, "hello")` 即可。
+- **代码可读性**：使用 `make_pair` 能让代码更清晰，更易读，特别是在复杂的表达式中
