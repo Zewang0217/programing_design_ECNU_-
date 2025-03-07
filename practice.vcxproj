@@ -144,6 +144,7 @@
     <ClCompile Include="1030SortByPrimeNumberCount.cpp" />
     <ClCompile Include="1031HTTPandHTTPS.cpp" />
     <ClCompile Include="1032buyBooks.cpp" />
+    <ClCompile Include="1033sdtudyRoom.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />

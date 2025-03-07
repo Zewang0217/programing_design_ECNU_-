@@ -71,6 +71,26 @@ std::sort(words.begin(), words.end(), [&](const std::string& a, const std::strin
 `emplace_back` 是 `std::vector` 容器提供的一个成员函数，其作用是在容器的末尾直接构造一个新元素。与 `push_back` 不同，`emplace_back` 可以避免不必要的对象拷贝或移动操作，因为它是直接在容器的内存空间中构造对象。
 而`emplace_back`能直接在`vector`末尾就地构造对象，传入构造`std::pair<int, int>`所需的参数即可，无需提前构造对象，效率更高，代码也更简洁。
 
+## resize
+
+```cpp
+vector<T> v;
+v.resize(new_size);
+```
+
++ `new_size`: 新的大小
+
++ 如果size变大，新的元素会添加并且初始化为默认值
+
++ 如果size变小，则多余的元素被删除
+
+```cpp
+vector<int> v;
+v.resize(5, 100);  // Resizes to 5 elements, initializing each with 100
+```
+
+
+
 # sstream
 
 ## isstringstream
