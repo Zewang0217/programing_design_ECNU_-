@@ -142,6 +142,7 @@
     <ClCompile Include="1027fret.cpp" />
     <ClCompile Include="1028exponentialProportion.cpp" />
     <ClCompile Include="1030SortByPrimeNumberCount.cpp" />
+    <ClCompile Include="1031HTTPandHTTPS.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />

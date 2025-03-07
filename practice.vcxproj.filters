@@ -72,5 +72,8 @@
     <ClCompile Include="1030SortByPrimeNumberCount.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1031HTTPandHTTPS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -108,3 +108,28 @@ std::pair<T1,T2> make_pair( T1 t, T2 u );
 
 - **类型推导**：`make_pair` 可以自动推导传入参数的类型，不用显式指定 `std::pair` 的模板参数，让代码更简洁。例如，不用写成 `std::pair<int, const char*>(10, "hello")`，直接用 `std::make_pair(10, "hello")` 即可。
 - **代码可读性**：使用 `make_pair` 能让代码更清晰，更易读，特别是在复杂的表达式中
+
+
+
+# string
+
+## substr（1031）
+
+###    `if (link.substr(0, 7) == "http://")`
+
++ 从字符串中提取子字符串，**从0开始，提取7个**
+
+### `currentLink.virtualAddress = link.substr(domainEnd);`
+
+- `substr(domainEnd)` 用于从链接字符串中提取虚拟地址部分，即从域名后面的 `/` 开始到字符串末尾的部分。
+- 将提取的虚拟地址赋值给 `currentLink` 结构体的 `virtualAddress` 成员变量。
+
+## find（1031）
+
+### `size_t protocolEnd = link.find("://");`
+
++ 在字符串中查找子字符串
+
+**size_t domainEnd = link.find("/", protocolEnd + 3);**
+
++ 从 `protocolEnd  + 3 `这个位置开始找
