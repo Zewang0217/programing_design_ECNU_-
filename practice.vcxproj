@@ -147,6 +147,7 @@
     <ClCompile Include="1033sdtudyRoom.cpp" />
     <ClCompile Include="1034whenISort.cpp" />
     <ClCompile Include="1035fileSort.cpp" />
+    <ClCompile Include="1036SearchWebPages.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />

@@ -133,6 +133,52 @@ std::pair<T1,T2> make_pair( T1 t, T2 u );
 
 # string
 
+## size() 和 length()
+
+**`size()` 和 `length()`**
+ 返回字符串的长度（字符数），效果相同。
+
+```cpp
+std::string s = "Hello";
+std::cout << s.size();    // 输出 5
+```
+
+## empty
+
+**`empty()`**
+ 判断字符串是否为空。
+
+```cpp
+if (s.empty()) { ... }
+```
+
+## clear
+
+**`clear()`**
+ 清空字符串内容。
+
+```cpp
+s.clear();  // s 变为空字符串
+```
+
+## resize
+
+**`resize(new_size)`**
+ 改变字符串的大小。如果增大，则新部分填充默认字符；如果减小，则截断。
+
+```cpp
+s.resize(3);  // 将 "Hello" 变成 "Hel"
+```
+
+## append
+
+**`append()`**
+ 在字符串末尾追加内容。
+
+```cpp
+s.append(" World");  // 等价于 s += " World";
+```
+
 ## substr（1031）
 
 ###    `if (link.substr(0, 7) == "http://")`
@@ -154,6 +200,17 @@ std::pair<T1,T2> make_pair( T1 t, T2 u );
 
 + 从 `protocolEnd  + 3 `这个位置开始找
 
+## insert
+
+**`insert()`**
+ 在指定位置插入字符串或字符。
+
+```cpp
+s.insert(0, "Hey, ");  // 在开头插入 "Hey, "
+```
+
+
+
 ## erase
 
 ```cpp
@@ -171,3 +228,82 @@ field.erase(0, 1);
   - 例如，如果 `field` 的值为 `" NAME"`（注意前面有一个空格），调用 `field.erase(0, 1);` 后，字符串变成 `"NAME"`。
 
 这种用法常用于去除字符串中的不必要的前导字符，例如前面多余的空格。
+
+## replace 
+
+**`replace()`**
+ 替换字符串中一部分内容。
+
+```cpp
+s.replace(0, 3, "Hi");  // 将前3个字符替换为 "Hi"
+```
+
+
+
+## push_back()` 和 `pop_back()
+
+分别在末尾添加一个字符和删除末尾一个字符。
+
+```cpp
+s.push_back('!');  
+s.pop_back();  
+```
+
+# iomanip
+
+## setw
+
+**基本作用**：
+ `setw(n)` 用于指定接下来输出的项至少占用 n 个字符的宽度。如果实际输出的字符数少于 n，则会在输出内容前面（或后面，取决于对齐方式）填充空格以满足宽度要求；如果实际输出字符数超过 n，则不会截断，依然全部输出。
+
+**用法示例**：
+
+```cpp
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    int num = 42;
+    cout << setw(5) << num << endl;  // 输出至少5个字符宽度，如果num不足5位，会在前面填充空格
+    return 0;
+}
+```
+
+输出:   42
+
+**常见搭配**：
+
+- 与 `right` 或 `left` 搭配使用：
+   使用 `setw` 设置宽度后，可以使用 `right`（默认）或 `left` 来确定内容是**右对齐**还是左对齐。
+
+  ```
+  cpp复制编辑cout << setw(10) << right << "Hello" << endl;  // "Hello" 右对齐，占10个字符宽度
+  cout << setw(10) << left << "Hello" << endl;   // "Hello" 左对齐，占10个字符宽度
+  ```
+
+- 与其他格式控制符一起使用，如 `setfill` 用于设置填充字符（默认为空格）。
+
+**注意事项**：
+ `setw` 只对紧接着的输出项有效，对于后续的输出项需要再次设置宽度。
+
+## setpresicion
+
+设置浮点数输出的精度。与 `fixed` 或 `scientific` 搭配使用时，会控制小数点后数字的位数；否则控制总有效数字的位数。
+ *示例：*
+
+```cpp
+cout << setprecision(4) << 3.1415926 << endl;
+// 默认情况下可能输出 3.142（4位有效数字）
+```
+
+## fixed
+
+**`fixed``固定`**
+ 使用定点格式输出浮点数。通常与 `setprecision` 配合，控制小数点后数字的个数。
+ *示例：*
+
+```cpp
+cout << fixed << setprecision(2) << 3.1415926 << endl;
+// 输出: 3.14
+```
