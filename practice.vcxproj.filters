@@ -81,5 +81,8 @@
     <ClCompile Include="1033sdtudyRoom.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1034whenISort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
