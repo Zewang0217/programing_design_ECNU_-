@@ -146,6 +146,7 @@
     <ClCompile Include="1032buyBooks.cpp" />
     <ClCompile Include="1033sdtudyRoom.cpp" />
     <ClCompile Include="1034whenISort.cpp" />
+    <ClCompile Include="1035fileSort.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />
