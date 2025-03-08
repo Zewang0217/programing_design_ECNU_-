@@ -249,6 +249,23 @@ s.push_back('!');
 s.pop_back();  
 ```
 
+## string::npos
+
+`string::npos` 是 C++ 标准库中 `std::string` 类的一个静态常量，用来表示“未找到”或“无效的位置”。其值通常为 `size_t` 类型的最大值（即无符号整数的 -1），因此在字符串搜索函数（如 `find`、`rfind` 等）中，如果没有找到指定的子字符串，它们就会返回 `string::npos`。
+
+例如：
+
+```cpp
+std::string s = "hello";
+if (s.find("z") == std::string::npos) {
+    std::cout << "未找到 'z'" << std::endl;
+}
+```
+
+在这个例子中，`s.find("z")` 返回 `std::string::npos`，表示在字符串 `"hello"` 中没有找到字符 `'z'`。
+
+
+
 # iomanip
 
 ## setw
@@ -307,3 +324,17 @@ cout << setprecision(4) << 3.1415926 << endl;
 cout << fixed << setprecision(2) << 3.1415926 << endl;
 // 输出: 3.14
 ```
+
+# cmath
+
+## round
+
+**作用：** 将一个浮点数四舍五入到最接近的整数。
+
+**使用方式：**
+
+- 例如，`round(3.4)` 返回 `3.0`；
+- `round(3.5)` 返回 `4.0`；
+- `round(-2.5)` 返回 `-3.0`（注意：C++ 的 round 是将 0.5 情况向远离 0 的方向舍入）。
+
+**返回值：** 虽然返回值类型是浮点型（double），但其数值为整数。
