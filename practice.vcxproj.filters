@@ -90,5 +90,8 @@
     <ClCompile Include="1036SearchWebPages.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1037gradeSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
