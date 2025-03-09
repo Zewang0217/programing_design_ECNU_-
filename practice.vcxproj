@@ -149,6 +149,7 @@
     <ClCompile Include="1035fileSort.cpp" />
     <ClCompile Include="1036SearchWebPages.cpp" />
     <ClCompile Include="1037gradeSort.cpp" />
+    <ClCompile Include="1038polarCoordinatSort.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />
