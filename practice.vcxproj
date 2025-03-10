@@ -151,6 +151,8 @@
     <ClCompile Include="1037gradeSort.cpp" />
     <ClCompile Include="1038polarCoordinatSort.cpp" />
     <ClCompile Include="1039roadSort.cpp" />
+    <ClCompile Include="1040integerSort.cpp" />
+    <ClCompile Include="1041.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />
