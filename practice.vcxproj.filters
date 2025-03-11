@@ -111,5 +111,11 @@
     <ClCompile Include="1043stringSort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1044SortBy1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1045hotsSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

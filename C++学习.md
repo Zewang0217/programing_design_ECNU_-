@@ -49,6 +49,13 @@
 
 + 从输入流（std：：cin）中读取一行文本并读取到line字符串中
 + 可用于消耗行末的换行符
++ 从输入流 `ss` 里读取字符，直至遇到指定的分隔符 `.` 或者到达流的末尾，接着把读取到的内容存于 `segment` 这个字符串对象中。
+
+  ```cpp
+  getline(ss, segment, '.')
+  ```
+
+  
 
 ## find
 
@@ -131,13 +138,39 @@ vector<int> v;
 v.resize(5, 100);  // Resizes to 5 elements, initializing each with 100
 ```
 
+## insert
 
+1. 在指定位置插入一个元素
+
+```cpp
+iterator insert( iterator pos, const T& value );
+```
+
+- **功能**：在 `pos` 所指向的位置之前插入一个新元素，其值为 `value`。
+- **返回值**：返回指向新插入元素的迭代器。
+
+2. 在指定位置插入 n 个相同元素
+
+```cpp
+void insert( iterator pos, size_type n, const T& value );
+```
+
+- **功能**：在 `pos` 所指向的位置之前插入 `n` 个值为 `value` 的元素。
+- **返回值**：无
+
+3. 在指定位置插入另一个容器的元素范围
+
+```cpp
+template< class InputIt >
+void insert( iterator pos, InputIt first, InputIt last );
+```
+
+- **功能**：在 `pos` 所指向的位置之前插入由迭代器 `first` 和 `last` 所指定范围（`[first, last)`）内的元素。
+- **返回值**：无
 
 # sstream
 
 ## isstringstream
-
-
 
 ```cpp
 std::istringstream iss(line);
@@ -148,6 +181,14 @@ while (iss >> word) {
 ```
 
 - **功能**：`std::istringstream` 可以将字符串 `line` 当作输入流处理。通过 `iss >> word` 操作，会从这个字符串流中**依次提取出**以空格分隔的单词，每次提取一个单词并存储到 `word` 中，然后将其添加到 `words` 向量里，从而实现将一行字符串分割成多个单词的功能。
+
+
+
+## stringstream
+
++ `std::stringstream` 可以将字符串当作流来处理，支持向其中写入数据（输出操作）和从其中读取数据（输入操作），常用于字符串和其他数据类型之间的转换、字符串的拼接和分割等操作。
++ **`<<` 运算符**：用于向 `std::stringstream` 对象中写入数据，类似于 `std::cout`。
++ **`>>` 运算符**：用于从 `std::stringstream` 对象中读取数据，类似于 `std::cin`。
 
 # utility
 
