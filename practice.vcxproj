@@ -154,6 +154,7 @@
     <ClCompile Include="1040integerSort.cpp" />
     <ClCompile Include="1041.cpp" />
     <ClCompile Include="1042.cpp" />
+    <ClCompile Include="1043stringSort.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />
