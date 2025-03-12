@@ -1,3 +1,4 @@
+/*
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -17,8 +18,8 @@ bool compare(const string& a, const string& b, const string& order) {
         if (aPos != bPos) {
             return aPos < bPos;
         } 
-        return a.length() < b.length();
     }
+    return a.length() < b.length();
 }
 
 int main() {
@@ -48,3 +49,4 @@ int main() {
         cout << endl;
     }
 }
+*.
