@@ -117,5 +117,11 @@
     <ClCompile Include="1045hotsSort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1046DNASort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1047randomSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

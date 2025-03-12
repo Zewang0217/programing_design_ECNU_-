@@ -1,2 +1,4 @@
-﻿  1045hotsSort.cpp
+﻿  1047randomSort.cpp
+D:\Zewang\DaYiXia\code\program design\practise\practice\practice\1047randomSort.cpp(11,19): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\Zewang\DaYiXia\code\program design\practise\practice\practice\1047randomSort.cpp(22,1): warning C4715: “compare”: 不是所有的控件路径都返回值
   practice.vcxproj -> D:\Zewang\DaYiXia\code\program design\practise\practice\x64\Debug\practice.exe
