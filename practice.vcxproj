@@ -159,6 +159,7 @@
     <ClCompile Include="1045hotsSort.cpp" />
     <ClCompile Include="1046DNASort.cpp" />
     <ClCompile Include="1047randomSort.cpp" />
+    <ClCompile Include="1048lineDataSort.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />
