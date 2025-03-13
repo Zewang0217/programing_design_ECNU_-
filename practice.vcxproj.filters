@@ -126,5 +126,14 @@
     <ClCompile Include="1048lineDataSort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1049minvector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1050stringSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1051linkSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
