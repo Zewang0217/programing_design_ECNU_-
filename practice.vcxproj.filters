@@ -135,7 +135,16 @@
     <ClCompile Include="1051linkSort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="KLSort.cpp">
+    <ClCompile Include="1052KLSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1053EmailAddressSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1054Holes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1055PinholeImaging.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

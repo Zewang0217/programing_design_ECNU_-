@@ -165,7 +165,10 @@
     <ClCompile Include="1049minvector.cpp" />
     <ClCompile Include="1050stringSort.cpp" />
     <ClCompile Include="1051linkSort.cpp" />
-    <ClCompile Include="KLSort.cpp" />
+    <ClCompile Include="1052KLSort.cpp" />
+    <ClCompile Include="1053EmailAddressSort.cpp" />
+    <ClCompile Include="1054Holes.cpp" />
+    <ClCompile Include="1055PinholeImaging.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />
