@@ -147,7 +147,13 @@
     <ClCompile Include="1055PinholeImaging.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1055G.cpp">
+    <ClCompile Include="1056G.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1057LinkedListOrganize.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1057linked_list_cleanup.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
