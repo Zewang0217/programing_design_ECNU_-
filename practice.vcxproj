@@ -168,6 +168,7 @@
     <ClCompile Include="1052KLSort.cpp" />
     <ClCompile Include="1053EmailAddressSort.cpp" />
     <ClCompile Include="1054Holes.cpp" />
+    <ClCompile Include="1055G.cpp" />
     <ClCompile Include="1055PinholeImaging.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
