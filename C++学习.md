@@ -425,3 +425,195 @@ cout << fixed << setprecision(2) << 3.1415926 << endl;
 - `round(-2.5)` 返回 `-3.0`（注意：C++ 的 round 是将 0.5 情况向远离 0 的方向舍入）。
 
 **返回值：** 虽然返回值类型是浮点型（double），但其数值为整数。
+
+# unordered_set
+
+## `unordered_set()`
+
+创建一个空的 `unordered_set`。
+
+```cpp
+#include <iostream>
+#include <unordered_set>
+
+int main() {
+    std::unordered_set<int> mySet;
+    return 0;
+}
+```
+
+## `unordered_set(InputIterator first, InputIterator last)`
+
+使用迭代器 `first` 到 `last` 范围内的元素初始化 `unordered_set`。
+
+```cpp
+#include <iostream>
+#include <unordered_set>
+#include <vector>
+
+int main() {
+    std::vector<int> vec = {1, 2, 3, 4, 5};
+    std::unordered_set<int> mySet(vec.begin(), vec.end());
+    return 0;
+}
+```
+
+##  `insert(value)`
+
+插入一个元素 `value` 到 `unordered_set` 中，如果元素已经存在，则不插入。返回一个 `std::pair<iterator, bool>`，其中 `iterator` 指向插入的元素或已存在的元素，`bool` 表示是否插入成功。
+
+```cpp
+#include <iostream>
+#include <unordered_set>
+
+int main() {
+    std::unordered_set<int> mySet;
+    auto result = mySet.insert(10);
+    if (result.second) {
+        std::cout << "插入成功" << std::endl;
+    }
+    return 0;
+}
+```
+
+## `erase(value)`
+
+删除值为 `value` 的元素，如果元素存在则返回 `1`，否则返回 `0`。
+
+```cpp
+#include <iostream>
+#include <unordered_set>
+
+int main() {
+    std::unordered_set<int> mySet = {1, 2, 3};
+    int count = mySet.erase(2);
+    if (count == 1) {
+        std::cout << "删除成功" << std::endl;
+    }
+    return 0;
+}
+```
+
+## `erase(iterator)`
+
+删除迭代器 `iterator` 所指向的元素，返回指向下一个元素的迭代器。
+
+```cpp
+#include <iostream>
+#include <unordered_set>
+
+int main() {
+    std::unordered_set<int> mySet = {1, 2, 3};
+    auto it = mySet.find(2);
+    if (it != mySet.end()) {
+        mySet.erase(it);
+    }
+    return 0;
+}
+```
+
+## `find(value)`
+
+查找值为 `value` 的元素，如果找到则返回指向该元素的**迭代器**，否则返回 `end()` 迭代器。
+
+```cpp
+#include <iostream>
+#include <unordered_set>
+
+int main() {
+    std::unordered_set<int> mySet = {1, 2, 3};
+    auto it = mySet.find(2);
+    if (it != mySet.end()) {
+        std::cout << "找到元素: " << *it << std::endl;
+    }
+    return 0;
+}
+```
+
+## `count(value)`
+
+返回值为 `value` 的元素的数量，由于 `unordered_set` 中元素**唯一**，返回值只能是 `0` 或 `1`。
+
+```cpp
+#include <iostream>
+#include <unordered_set>
+
+int main() {
+    std::unordered_set<int> mySet = {1, 2, 3};
+    int count = mySet.count(2);
+    std::cout << "元素 2 的数量: " << count << std::endl;
+    return 0;
+}
+```
+
+## `size()`
+
+返回 `unordered_set` 中元素的数量。
+
+```cpp
+#include <iostream>
+#include <unordered_set>
+
+int main() {
+    std::unordered_set<int> mySet = {1, 2, 3};
+    std::cout << "集合大小: " << mySet.size() << std::endl;
+    return 0;
+}
+```
+
+## `empty()`
+
+判断 `unordered_set` 是否为空，如果为空返回 `true`，否则返回 `false`。
+
+```cpp
+#include <iostream>
+#include <unordered_set>
+
+int main() {
+    std::unordered_set<int> mySet;
+    if (mySet.empty()) {
+        std::cout << "集合为空" << std::endl;
+    }
+    return 0;
+}
+```
+
+## `begin()`
+
+返回指向 `unordered_set` 中第一个元素的迭代器。
+
+## `end()`
+
+返回指向 `unordered_set` 中最后一个元素之后位置的迭代器。
+
+```cpp
+#include <iostream>
+#include <unordered_set>
+
+int main() {
+    std::unordered_set<int> mySet = {1, 2, 3};
+    for (auto it = mySet.begin(); it != mySet.end(); ++it) {
+        std::cout << *it << " ";
+    }
+    std::cout << std::endl;
+    return 0;
+}
+```
+
+## `clear()`
+
+清空 `unordered_set` 中的所有元素。
+
+```cpp
+#include <iostream>
+#include <unordered_set>
+
+int main() {
+    std::unordered_set<int> mySet = {1, 2, 3};
+    mySet.clear();
+    if (mySet.empty()) {
+        std::cout << "集合已清空" << std::endl;
+    }
+    return 0;
+}
+```

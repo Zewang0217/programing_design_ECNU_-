@@ -156,5 +156,8 @@
     <ClCompile Include="1057linked_list_cleanup.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1058wakeup.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
