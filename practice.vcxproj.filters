@@ -165,5 +165,8 @@
     <ClCompile Include="1060serch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1061diamond.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
