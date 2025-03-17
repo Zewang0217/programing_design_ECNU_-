@@ -178,6 +178,7 @@
     <ClCompile Include="1061diamond.cpp" />
     <ClCompile Include="1062Gudushu.cpp" />
     <ClCompile Include="1063subby.cpp" />
+    <ClCompile Include="1064true.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />

@@ -174,5 +174,8 @@
     <ClCompile Include="1063subby.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1064true.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
