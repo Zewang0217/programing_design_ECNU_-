@@ -180,5 +180,8 @@
     <ClCompile Include="1065WaveletCompression.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1066.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
