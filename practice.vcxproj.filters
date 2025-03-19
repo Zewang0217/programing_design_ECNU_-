@@ -192,5 +192,8 @@
     <ClCompile Include="1068GoldbachConjecture.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1069buyHouse.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

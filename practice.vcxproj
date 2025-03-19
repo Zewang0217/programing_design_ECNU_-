@@ -183,6 +183,7 @@
     <ClCompile Include="1066.cpp" />
     <ClCompile Include="1067grade.cpp" />
     <ClCompile Include="1068GoldbachConjecture.cpp" />
+    <ClCompile Include="1069buyHouse.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />
