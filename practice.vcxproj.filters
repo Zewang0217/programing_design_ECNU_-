@@ -201,7 +201,10 @@
     <ClCompile Include="1071DataDensity.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="takdTheRoll.cpp">
+    <ClCompile Include="1072takdTheRoll.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1073FamilialNumbers.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -186,11 +186,12 @@
     <ClCompile Include="1069buyHouse.cpp" />
     <ClCompile Include="1070MagicSquare.cpp" />
     <ClCompile Include="1071DataDensity.cpp" />
+    <ClCompile Include="1073FamilialNumbers.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />
     <ClCompile Include="1029SortSubstringsByNonRepeatedCharacterCount.cpp" />
-    <ClCompile Include="takdTheRoll.cpp" />
+    <ClCompile Include="1072takdTheRoll.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
