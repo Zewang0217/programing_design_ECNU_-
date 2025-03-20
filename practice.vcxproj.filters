@@ -210,5 +210,8 @@
     <ClCompile Include="1074CountTheNumberOfDifferentSimplestProperFractions.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1075pay.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
