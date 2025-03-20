@@ -187,6 +187,7 @@
     <ClCompile Include="1070MagicSquare.cpp" />
     <ClCompile Include="1071DataDensity.cpp" />
     <ClCompile Include="1073FamilialNumbers.cpp" />
+    <ClCompile Include="1074CountTheNumberOfDifferentSimplestProperFractions.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />
