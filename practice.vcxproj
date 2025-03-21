@@ -189,6 +189,8 @@
     <ClCompile Include="1073FamilialNumbers.cpp" />
     <ClCompile Include="1074CountTheNumberOfDifferentSimplestProperFractions.cpp" />
     <ClCompile Include="1075pay.cpp" />
+    <ClCompile Include="1076.cpp" />
+    <ClCompile Include="1077_3333.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />
