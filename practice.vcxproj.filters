@@ -219,5 +219,8 @@
     <ClCompile Include="1077_3333.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1078mathNote.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
