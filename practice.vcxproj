@@ -194,6 +194,7 @@
     <ClCompile Include="1078mathNote.cpp" />
     <ClCompile Include="1079determineIP.cpp" />
     <ClCompile Include="1080card.cpp" />
+    <ClCompile Include="1081replace.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />
