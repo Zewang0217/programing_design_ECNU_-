@@ -246,5 +246,8 @@
     <ClCompile Include="1086SLListDeleteNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1087crowdedCuty.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
