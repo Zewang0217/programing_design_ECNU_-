@@ -198,6 +198,7 @@
     <ClCompile Include="1082Rot13.cpp" />
     <ClCompile Include="1083n!.cpp" />
     <ClCompile Include="1084nightKiller.cpp" />
+    <ClCompile Include="1085jianting.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />
