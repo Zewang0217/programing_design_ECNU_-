@@ -48,7 +48,9 @@
 ## getline(std::cin, line);
 
 + 从输入流（std：：cin）中读取一行文本并读取到line字符串中
+
 + 可用于消耗行末的换行符
+
 + 从输入流 `ss` 里读取字符，直至遇到指定的分隔符 `.` 或者到达流的末尾，接着把读取到的内容存于 `segment` 这个字符串对象中。
 
   ```cpp
@@ -379,7 +381,7 @@ int main() {
 **常见搭配**：
 
 - 与 `right` 或 `left` 搭配使用：
-   使用 `setw` 设置宽度后，可以使用 `right`（默认）或 `left` 来确定内容是**右对齐**还是左对齐。
+  使用 `setw` 设置宽度后，可以使用 `right`（默认）或 `left` 来确定内容是**右对齐**还是左对齐。
 
   ```
   cpp复制编辑cout << setw(10) << right << "Hello" << endl;  // "Hello" 右对齐，占10个字符宽度
@@ -493,6 +495,8 @@ int main() {
     return 0;
 }
 ```
+
+
 
 ## `erase(iterator)`
 
@@ -617,3 +621,220 @@ int main() {
     return 0;
 }
 ```
+
+# unordered_map
+
+`unordered_map` 是 C++ 标准库中的一个容器，它位于 `<unordered_map>` 头文件中，用于存储键值对，并且可以根据键快速查找对应的值。下面是关于 `unordered_map` 的详细用法总结：
+
+### 1. 包含头文件
+
+在使用 `unordered_map` 之前，需要包含相应的头文件：
+
+```cpp
+#include <unordered_map>
+```
+
+### 2. 声明和初始化
+
+可以使用以下几种方式声明和初始化 `unordered_map`：
+
+```cpp
+#include <iostream>
+#include <unordered_map>
+#include <string>
+
+int main() {
+    // 声明一个空的 unordered_map，键为 string 类型，值为 int 类型
+    std::unordered_map<std::string, int> myMap;
+
+    // 插入元素的方式初始化
+    myMap["apple"] = 1;
+    myMap["banana"] = 2;
+    myMap["cherry"] = 3;
+
+    // 初始化列表初始化
+    std::unordered_map<std::string, int> anotherMap = {
+        {"dog", 4},
+        {"cat", 5},
+        {"bird", 6}
+    };
+
+    return 0;
+}
+```
+
+### 3. 插入元素
+
+可以使用以下几种方法向 `unordered_map` 中插入元素：
+
+```cpp
+#include <iostream>
+#include <unordered_map>
+#include <string>
+
+int main() {
+    std::unordered_map<std::string, int> myMap;
+
+    // 使用 [] 运算符插入元素
+    myMap["apple"] = 1;
+
+    // 使用 insert 方法插入元素
+    myMap.insert({"banana", 2});
+
+    // 使用 make_pair 插入元素
+    myMap.insert(std::make_pair("cherry", 3));
+
+    return 0;
+}
+```
+
+### 4. 访问元素
+
+可以使用 `[]` 运算符或 `at()` 方法访问 `unordered_map` 中的元素：
+
+```cpp
+#include <iostream>
+#include <unordered_map>
+#include <string>
+
+int main() {
+    std::unordered_map<std::string, int> myMap = {
+        {"apple", 1},
+        {"banana", 2},
+        {"cherry", 3}
+    };
+
+    // 使用 [] 运算符访问元素
+    std::cout << "Value of apple: " << myMap["apple"] << std::endl;
+
+    // 使用 at() 方法访问元素
+    std::cout << "Value of banana: " << myMap.at("banana") << std::endl;
+
+    return 0;
+}
+```
+
+### 5. 检查元素是否存在
+
+可以使用 `find()` 方法检查某个键是否存在于 `unordered_map` 中：
+
+```cpp
+#include <iostream>
+#include <unordered_map>
+#include <string>
+
+int main() {
+    std::unordered_map<std::string, int> myMap = {
+        {"apple", 1},
+        {"banana", 2},
+        {"cherry", 3}
+    };
+
+    // 检查键 "apple" 是否存在
+    if (myMap.find("apple") != myMap.end()) {
+        std::cout << "Key 'apple' exists." << std::endl;
+    } else {
+        std::cout << "Key 'apple' does not exist." << std::endl;
+    }
+
+    return 0;
+}
+```
+
+### 6. 删除元素
+
+可以使用 `erase()` 方法删除 `unordered_map` 中的元素：
+
+```cpp
+#include <iostream>
+#include <unordered_map>
+#include <string>
+
+int main() {
+    std::unordered_map<std::string, int> myMap = {
+        {"apple", 1},
+        {"banana", 2},
+        {"cherry", 3}
+    };
+
+    // 删除键为 "banana" 的元素
+    myMap.erase("banana");
+
+    return 0;
+}
+```
+
+### 7. 遍历元素
+
+可以使用范围 for 循环或迭代器遍历 `unordered_map` 中的元素：
+
+```cpp
+#include <iostream>
+#include <unordered_map>
+#include <string>
+
+int main() {
+    std::unordered_map<std::string, int> myMap = {
+        {"apple", 1},
+        {"banana", 2},
+        {"cherry", 3}
+    };
+
+    // 使用范围 for 循环遍历
+    for (const auto& pair : myMap) {
+        std::cout << pair.first << ": " << pair.second << std::endl;
+    }
+
+    // 使用迭代器遍历
+    for (auto it = myMap.begin(); it != myMap.end(); ++it) {
+        std::cout << it->first << ": " << it->second << std::endl;
+    }
+
+    return 0;
+}
+```
+
+### 8. 获取元素数量
+
+可以使用 `size()` 方法获取 `unordered_map` 中元素的数量：
+
+```cpp
+#include <iostream>
+#include <unordered_map>
+#include <string>
+
+int main() {
+    std::unordered_map<std::string, int> myMap = {
+        {"apple", 1},
+        {"banana", 2},
+        {"cherry", 3}
+    };
+
+    std::cout << "Number of elements: " << myMap.size() << std::endl;
+
+    return 0;
+}
+```
+
+### 9. 清空 `unordered_map`
+
+可以使用 `clear()` 方法清空 `unordered_map` 中的所有元素：
+
+```cpp
+#include <iostream>
+#include <unordered_map>
+#include <string>
+
+int main() {
+    std::unordered_map<std::string, int> myMap = {
+        {"apple", 1},
+        {"banana", 2},
+        {"cherry", 3}
+    };
+
+    // 清空 unordered_map
+    myMap.clear();
+
+    std::cout <
+```
+

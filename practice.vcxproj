@@ -202,6 +202,7 @@
     <ClCompile Include="1086SLListDeleteNode.cpp" />
     <ClCompile Include="1087crowdedCuty.cpp" />
     <ClCompile Include="1088password.cpp" />
+    <ClCompile Include="1089repeateNum.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />
