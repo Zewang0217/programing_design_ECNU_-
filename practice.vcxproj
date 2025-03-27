@@ -206,6 +206,7 @@
     <ClCompile Include="10901thInNInteger.cpp" />
     <ClCompile Include="1091Birthday.cpp" />
     <ClCompile Include="1092GCDAndLCM.cpp" />
+    <ClCompile Include="1093perfetNum.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />
