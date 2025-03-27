@@ -204,6 +204,7 @@
     <ClCompile Include="1088password.cpp" />
     <ClCompile Include="1089repeateNum.cpp" />
     <ClCompile Include="10901thInNInteger.cpp" />
+    <ClCompile Include="1091Birthday.cpp" />
     <ClCompile Include="practice.cpp" />
     <ClCompile Include="1019SOrt.cpp" />
     <ClCompile Include="1023StudentInfoProgress.cpp" />
