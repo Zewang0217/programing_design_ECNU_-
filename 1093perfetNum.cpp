@@ -1,3 +1,4 @@
+/*
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -42,7 +43,7 @@ int main() {
 
 			bool first = true;
 			for (const auto& n : factors) {
-				if (!first) cout << ",";
+				if (!first) cout << ", ";
 				first = false;
 				cout << n;
 			}
@@ -51,3 +52,4 @@ int main() {
 		factors.clear();
 	}
 }
+*/
