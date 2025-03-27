@@ -255,5 +255,8 @@
     <ClCompile Include="1089repeateNum.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="10901thInNInteger.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
