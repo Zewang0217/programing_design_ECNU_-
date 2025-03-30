@@ -27,5 +27,11 @@
     <ClCompile Include="1113waveImage.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="2822.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="3031.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
