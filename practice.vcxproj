@@ -134,6 +134,8 @@
     <ClCompile Include="1113waveImage.cpp" />
     <ClCompile Include="2822.cpp" />
     <ClCompile Include="3031.cpp" />
+    <ClCompile Include="3053.cpp" />
+    <ClCompile Include="3679.cpp" />
     <ClCompile Include="practice.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
