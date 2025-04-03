@@ -137,6 +137,7 @@
     <ClCompile Include="3053.cpp" />
     <ClCompile Include="3679.cpp" />
     <ClCompile Include="practice.cpp" />
+    <ClCompile Include="week8lastyear1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

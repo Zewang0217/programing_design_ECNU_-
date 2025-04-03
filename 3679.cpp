@@ -1,3 +1,4 @@
+/*
 #include <iostream>
 #include <cmath>
 
@@ -43,7 +44,8 @@ void solve3() {
     }
 }
 
+
 int main() {
     solve3();
     return 0;
-}
+}*/

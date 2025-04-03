@@ -5,7 +5,7 @@
 #include <cmath>
 
 using namespace std;
-
+/*
 string decimalToBinary(const string& decimal) {
     string binary;
     string num = decimal;
@@ -75,7 +75,7 @@ void solve() {
         cout << "case #" << i << ":" << endl;
         cout << reversedDecimal << endl;
     }
-}
+}*/
 
 /*
 int main() {

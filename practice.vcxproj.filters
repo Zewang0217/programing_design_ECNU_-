@@ -39,5 +39,8 @@
     <ClCompile Include="3679.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="week8lastyear1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
