@@ -405,7 +405,7 @@ cout << setprecision(4) << 3.1415926 << endl;
 
 ## fixed
 
-**`fixed``固定`**
+**`fixed`固定`**
  使用定点格式输出浮点数。通常与 `setprecision` 配合，控制小数点后数字的个数。
  *示例：*
 
