@@ -8,6 +8,8 @@ struct Node {
 	Node(T value) : data(value), next(nullptr) {}
 };
 
+
+
 template <typename T>
 class LinkedStack {
 private:
@@ -62,22 +64,44 @@ public:
 	~LinkedStack() {
 		clear();
 	}
+
+	//µ»∫≈÷ÿ‘ÿ
+	LinkedStack<T>& operator = (const LinkedStack<T>& other) {
+		if (this == &other) {
+			return *this;
+		}
+		clear();
+
+		if (other.topNode != nullptr) {
+			Node<T>* copyNode = other.topNode;
+			Node<T>* current = nullptr;
+			
+			while (copyNode != nullptr) {
+				Node<T>* newNode = new Node<T>(copyNode->data);
+				
+				if (topNode == nullptr) {
+					topNode = newNode;
+					current = newNode;
+				}
+				else {
+					current->next = newNode;
+					current = current->next;
+				}
+				copyNode = copyNode->next;
+			}
+			stackSize = other.stackSize;
+		}
+
+		return *this;
+	}
+
+	int exponent() {
+		if (empty()) return -1;
+		return topNode->data.exponent;
+	}
+
+	
+
  
 };
 
-/*
-int main() {
-	LinkedStack<int> stack;
-	int num;
-	cin >> num;
-	while (num != -1) {
-		stack.push(num);
-		cin >> num;
-	}
-	while (!stack.empty()) {
-		cout << stack.top() << " ";
-		stack.pop();
-	}
-	return 0;
-}
-*/

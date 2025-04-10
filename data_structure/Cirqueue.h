@@ -18,6 +18,7 @@ public:
     Error_code retrieve_front(Queue_entry& item) const;
     Error_code retrieve_rear(Queue_entry& item) const;
     Queue_entry show(int i) const;
+    void exchage(int a, int b);
     bool full();
     int size();
     void clear();
@@ -98,6 +99,15 @@ Error_code Cirqueue<Queue_entry>::retrieve_rear(Queue_entry& item) const {
     }
     item = entry[(rear - 1 + maxqueue) % maxqueue];
     return success;
+}
+
+
+template<class Queue_entry>
+void Cirqueue<Queue_entry>::exchage(int a, int b) {
+    Queue_entry tmp;
+    tmp = entry[a];
+    entry[a] = entry[b];
+    entry[b] = tmp;
 }
 
 template<class Queue_entry>

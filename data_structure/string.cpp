@@ -1,3 +1,4 @@
+/*
 #include <iostream>
 #include <ctype.h>
 #include <sstream>
@@ -265,10 +266,11 @@ istream& operator>>(istream& in, String& s) {
 	s = String(buffer);  // 构造新的 String 对象
 	return in;
 }
+*/
 
-
+/*
 int main() {
-	/*
+	// 上机作业
 	int N;
 	cin >> N;
 	cin.ignore();
@@ -314,7 +316,8 @@ int main() {
 	}
 	cout << endl;
 	return 0;
-	*/
+	
+	// cin 实现
 
 	String s1, s2;
 
@@ -329,5 +332,6 @@ int main() {
 	}
 	
 }
+*/
 
 // cin功能的添加

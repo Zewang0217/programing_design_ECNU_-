@@ -256,6 +256,7 @@ public:
 	}
 };
 
+/*
 int main() {
 	int n;
 	cin >> n;
@@ -271,3 +272,4 @@ int main() {
 	list.deleteRepeateElement();
 	list.printList();
 }
+*/
