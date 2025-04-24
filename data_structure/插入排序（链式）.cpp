@@ -13,6 +13,11 @@ struct Node {
     Node(Node_entry item, Node<Node_entry>* link = nullptr) : entry(item), next(link) {}
 };
 
+// 打印元素的函数
+void print(int& x) {
+    cout << x << " ";
+}
+
 // 定义链表类
 template <class List_entry>
 class MyList {
@@ -88,6 +93,7 @@ public:
             visit(p->entry);
             p = p->next;
         }
+        cout << endl;
     }
 
     // 在末尾添加元素
@@ -163,19 +169,98 @@ public:
         return success;
     }
 
-    Error_code exchange(int pos1, int pos2) {
-        List_entry temp1 = retrieve(pos1);
-        List_entry temp2 = retrieve(pos2);
-        replace(pos1, temp2);
-        replace(pos2, temp1);
-        return success;
+    // 归并排序的主入口
+    void mergesort() {
+        int depth = 0;
+        head = recursiveMergesort(head, depth);
+        current_position = -1; // 重置当前位置
+    }
+
+private:
+    // 递归归并排序
+    Node<List_entry>* recursiveMergesort(Node<List_entry>* subList, int& depth) {
+        if (subList == nullptr || subList->next == nullptr) {
+            return subList;
+        }
+
+        // 分割链表
+        Node<List_entry>* secondHalf = divide_from(subList);
+
+        // 递归排序
+        depth++;
+        subList = recursiveMergesort(subList, depth);
+        secondHalf = recursiveMergesort(secondHalf, depth);
+        depth--;
+
+        // 深度为0时打印
+        if (depth == 0) {
+            printList(subList);
+            printList(secondHalf);
+        }
+
+        // 合并两个有序链表
+        return merge(subList, secondHalf);
+    }
+
+    // 分割链表（快慢指针法）
+    Node<List_entry>* divide_from(Node<List_entry>* subList) {
+        Node<List_entry>* position, * midpoint, * second_half;
+        // 先把中间点初始化为开头
+        if ((midpoint = subList) == NULL) return NULL; // 空
+        // 快慢指针获取中间位置
+        position = midpoint->next;
+        while (position != NULL) {
+            position = position->next; // 右移position,判断是否到头
+            if (position != NULL) {
+                midpoint = midpoint->next;
+                position = position->next;
+            }
+        }
+        // 找到中间位置后，赋值给second_half
+        second_half = midpoint->next;
+        //断开列表
+        midpoint->next = nullptr;
+        return second_half;
+    }
+
+    // 合并两个有序链表
+    Node<List_entry>* merge(Node<List_entry>* first, Node<List_entry>* second) {
+        Node<List_entry> dummy; // 哑节点
+        Node<List_entry>* tail = &dummy;
+
+        while (first != nullptr && second != nullptr) {
+            if (first->entry <= second->entry) {
+                tail->next = first;
+                first = first->next;
+            }
+            else {
+                tail->next = second;
+                second = second->next;
+            }
+            tail = tail->next;
+        }
+
+        // 连接剩余部分
+        if (first != nullptr) {
+            tail->next = first;
+        }
+        else {
+            tail->next = second;
+        }
+
+        return dummy.next;
+    }
+
+    // 打印链表
+    void printList(Node<List_entry>* list) {
+        Node<List_entry>* p = list;
+        while (p != nullptr) {
+            cout << p->entry << " ";
+            p = p->next;
+        }
+        cout << endl;
     }
 };
-
-// 打印元素的函数
-void print(int& x) {
-    cout << x << " ";
-}
 
 int main() {
     int n;
@@ -187,29 +272,11 @@ int main() {
         list.add(x);
     }
 
-    int ordered = 1;
-    for (; ordered < n; ordered++) {
-        int current;
-        list.retrieve(ordered, current);
-        int j = ordered - 1;
+    // 执行归并排序
+    list.mergesort();
 
-        while (j >= 0) {
-            int toComp;
-            list.retrieve(j, toComp);
-            if (toComp > current) {
-                list.replace(j + 1, toComp);
-                j--;
-            }
-            else {
-                break;
-            }
-        }
-        list.replace(j + 1, current);
-
-        if (ordered == n / 2 - 1) {
-            list.traverse(print);
-            cout << endl;
-        }
-    }
+    // 输出最终结果
     list.traverse(print);
+
+    return 0;
 }

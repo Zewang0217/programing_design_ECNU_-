@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 #include <string>
 #include <sstream>
@@ -71,6 +72,7 @@ protected:
     int count;
     List_entry entry[max_list];
 };
+*/
 
 //void print(int& x) {
 //    cout << x << " ";
@@ -89,11 +91,12 @@ int main() {
     l.traverse(print);
 }
 */
-
+/*
 struct Record {
     string key;
     string other;
 };
+*/
 
 /*
 // 二分查找实现
